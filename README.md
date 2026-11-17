@@ -17,7 +17,7 @@ The project is devided into 6 main branches:
 
 Below is shown full tree-files for this project:
 ```text
-microduck-rl-lab/
+Microduck-RL/
 │
 ├── README.md
 ├── pyproject.toml
@@ -25,86 +25,64 @@ microduck-rl-lab/
 ├── .gitignore
 │
 ├── configs/
-│   ├── experiments/
-│   │   ├── smoke_test.yaml
-│   │   ├── ppo_baseline.yaml
-│   │   ├── ppo_friction.yaml
-│   │   └── ppo_pushes.yaml
 │   ├── environments/
-│   │   └── single_duck.yaml
-│   └── evaluation/
-│       └── default.yaml
+│   ├── training/
+│   └── experiments/
 │
 ├── src/
 │   └── ducklab/
-│       ├── cli/
-│       │   ├── train.py
-│       │   ├── evaluate.py
-│       │   ├── compare.py
-│       │   └── export.py
 │       │
-│       ├── core/
-│       │   ├── config.py
-│       │   ├── types.py
-│       │   └── paths.py
+│       ├── __init__.py
 │       │
 │       ├── environments/
+│       │   ├── __init__.py
 │       │   ├── factory.py
-│       │   ├── upstream_adapter.py
-│       │   └── disturbances.py
+│       │   ├── robot.py
+│       │   ├── rewards.py
+│       │   └── randomization.py
 │       │
 │       ├── agents/
-│       │   ├── policy.py
-│       │   ├── random_policy.py
-│       │   └── trained_policy.py
+│       │   ├── __init__.py
+│       │   ├── base.py
+│       │   └── baseline.py
 │       │
 │       ├── training/
-│       │   ├── trainer.py
-│       │   └── ppo_runner.py
+│       │   ├── __init__.py
+│       │   └── trainer.py
 │       │
 │       ├── evaluation/
+│       │   ├── __init__.py
 │       │   ├── evaluator.py
-│       │   ├── metrics.py
-│       │   └── scenarios.py
+│       │   └── metrics.py
 │       │
 │       ├── analysis/
-│       │   ├── data_loader.py
-│       │   ├── statistics.py
+│       │   ├── __init__.py
 │       │   └── plots.py
 │       │
-│       ├── infrastructure/
-│       │   ├── tracking.py
-│       │   └── artifacts.py
-│       │
-│       └── deployment/
-│           ├── onnx_exporter.py
-│           └── validator.py
+│       └── infrastructure/
+│           ├── __init__.py
+│           └── logger.py
 │
 ├── scripts/
+│   ├── train.py
+│   ├── evaluate.py
 │   └── slurm/
 │       ├── smoke.sbatch
-│       ├── train.sbatch
-│       └── evaluate.sbatch
+│       └── train.sbatch
 │
 ├── tests/
-│   ├── test_config.py
-│   ├── test_environment.py
+│   ├── test_environments.py
 │   ├── test_rewards.py
 │   └── test_metrics.py
 │
-├── reports/
-│   ├── report.tex
-│   └── figures/
-│
 ├── docs/
 │   ├── architecture.md
-│   ├── mdp.md
-│   ├── experiments.md
-│   └── checkpoint.md
+│   └── experiments.md
+│
+├── reports/
+│   └── figures/
 │
 └── results/
-    └── .gitkeep
-
 ```
 
 
