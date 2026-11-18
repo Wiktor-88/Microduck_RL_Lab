@@ -1,0 +1,9 @@
+Tutaj będzie to do przechowywania wyników treningów i eksperymentów RL, 
+umożliwiając ich późniejszą analizę oraz porównywanie różnych modeli.
+
+Można stworzyć więcej folderów aby trzymac informacje o:
+checkpoints/ — zapisane modele i wagi sieci neuronowych z kolejnych etapów treningu PPO.
+
+logs/ — logi z treningów, np. wartości nagród, długości epizodów i błędy uczenia.
+
+metrics/ — wyniki ewaluacji agentów, np. skuteczność chodzenia, liczba upadków i odporność na zakłócenia.

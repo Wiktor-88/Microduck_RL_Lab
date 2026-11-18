@@ -1,0 +1,11 @@
+Tu bedzie dokumentacja całego projektu zeby Adam sie nie czepiał że
+połowa projektu została stowrzona w jeden wieczór z pizdy
+
+ARCHITECTURE.md -- opis struktury projektu, odpowiedzialności poszczególnych modułów
+i sposobu ich współpracy.
+
+TASKS.md — podział obowiązków między członków zespołu, lista zadań i 
+harmonogram realizacji projektu.
+
+experiments.md — dokumentacja przeprowadzanych eksperymentów RL, 
+ich celów, konfiguracji, wyników i wniosków.

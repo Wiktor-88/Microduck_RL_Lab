@@ -1,0 +1,6 @@
+Folder src/ducklab/training/ służy do zarządzania procesem trenowania agentów Deep Reinforcement Learning, w szczególności algorytmem PPO i aktualizacją parametrów sieci neuronowych.
+- __init__.py — oznacza katalog jako pakiet Pythona, umożliwiając importowanie jego modułów.
+- trainer.py — odpowiada za uruchamianie i kontrolowanie treningu PPO, zarządzanie jego parametrami oraz zapisywanie wytrenowanych modeli.
+Przykład: trainer.py uruchamia trening PPO na Edenie, podczas którego agent uczy się sterować Microduckiem na podstawie nagród otrzymywanych w symulacji.
+
+Ważne: Folder training/ odpowiada za proces uczenia agentów, natomiast agents/ definiuje ich polityki i sposób podejmowania decyzji.

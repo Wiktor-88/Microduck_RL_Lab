@@ -1,0 +1,12 @@
+Ten folder bedzie do przechowywani wspólnych ustawień dla całęgo projktu
+np. stała Gamma w RL czy ustawnienia wykresów jak czcionki itd.
+
+Podfoldery konkreteni beda zaweirały:
+a) environments/ -- konfiguracja środowiska symulacyjnego,
+np. liczba robotów, tarcie podłoża, przeszkody i parametry fizyczne.
+
+b) training/ — ustawienia treningu RL, 
+np. hiperparametry PPO, liczba iteracji, learning rate i architektura sieci neuronowej.
+
+c) experiments/ — konfiguracje konkretnych eksperymentów, 
+np. porównanie agenta trenowanego z Domain Randomization i bez niej.

@@ -1,0 +1,10 @@
+Folder src/ducklab/analysis/ służy do analizy wyników eksperymentów Reinforcement Learning, 
+porównywania wytrenowanych agentów oraz wizualizacji ich skuteczności.
+- __init__.py — oznacza katalog jako pakiet Pythona, umożliwiając importowanie jego modułów.
+- plots.py — generuje wykresy przedstawiające wyniki treningów, np. średnią nagrodę, 
+długość epizodów i skuteczność różnych modeli PPO.
+Przykład: Po wytrenowaniu agentów PPO z Domain Randomization i bez niej wykorzystujemy 
+plots.py do wygenerowania wykresów porównujących ich odporność na zmiany warunków fizycznych.
+
+Ważne: Folder evaluation/ odpowiada za pomiar wyników agentów, natomiast analysis/ za ich analizę, 
+porównywanie i wizualizację.

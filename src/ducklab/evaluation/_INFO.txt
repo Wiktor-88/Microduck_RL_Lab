@@ -1,0 +1,7 @@
+Folder src/ducklab/evaluation/ służy do testowania wytrenowanych agentów RL oraz mierzenia ich skuteczności w różnych warunkach symulacyjnych.
+- __init__.py — oznacza katalog jako pakiet Pythona, umożliwiając importowanie jego modułów.
+- evaluator.py — odpowiada za uruchamianie testów agentów w wybranych środowiskach i zbieranie wyników ich działania.
+- metrics.py — definiuje metryki oceny agentów, np. długość epizodu, liczbę upadków, dokładność poruszania się i odporność na zakłócenia.
+Przykład: Po wytrenowaniu agenta PPO testujemy go na powierzchniach o różnym tarciu i sprawdzamy, jak długo utrzymuje równowagę oraz jak często upada.
+
+Ważne: Folder evaluation/ odpowiada za przeprowadzanie testów i obliczanie metryk, natomiast analysis/ za porównywanie wyników oraz tworzenie wykresów.

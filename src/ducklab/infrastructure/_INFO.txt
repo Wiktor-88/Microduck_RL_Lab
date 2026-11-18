@@ -1,0 +1,6 @@
+Folder src/ducklab/infrastructure/ służy do obsługi infrastruktury technicznej projektu, w szczególności logowania eksperymentów, zarządzania wynikami oraz integracji z zewnętrznymi narzędziami.
+- __init__.py — oznacza katalog jako pakiet Pythona, umożliwiając importowanie jego modułów.
+- logger.py — odpowiada za rejestrowanie przebiegu treningów RL, np. wartości nagród, liczby iteracji, hiperparametrów i błędów, z możliwością integracji z Weights & Biases lub TensorBoard.
+Przykład: Podczas treningu PPO na Edenie logger.py zapisuje metryki i przesyła je do Weights & Biases, dzięki czemu możemy monitorować postępy uczenia.
+
+Ważne: Folder infrastructure/ odpowiada za techniczne narzędzia wspierające eksperymenty, natomiast scripts/slurm/ zawiera skrypty uruchamiające zadania obliczeniowe na Edenie.

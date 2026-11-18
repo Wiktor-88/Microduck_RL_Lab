@@ -1,0 +1,3 @@
+Tutaj beda przchowywany końcowy raport w kilku postaciach: pdf czy tex
+
+folder figures trzyma wszytkie wygenerowne wykresy

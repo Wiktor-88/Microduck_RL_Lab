@@ -1,0 +1,7 @@
+Folder tests/ służy do przechowywania automatycznych testów sprawdzających poprawność działania poszczególnych modułów projektu oraz wykrywania błędów podczas jego rozwoju.
+- test_environments.py — testuje poprawność tworzenia środowiska, konfiguracji robota oraz przestrzeni obserwacji i akcji.
+- test_rewards.py — sprawdza poprawność obliczania nagród i kar za określone zachowania agenta.
+- test_metrics.py — weryfikuje poprawność obliczania metryk, np. średniej nagrody, długości epizodu i liczby upadków.
+Przykład: Po zmianie funkcji nagrody uruchamiamy testy za pomocą pytest, aby upewnić się, że nagrody są obliczane poprawnie i zmiany nie wprowadziły błędów.
+
+Ważne: Większość testów powinna działać lokalnie bez GPU, natomiast bardziej wymagające testy integracyjne symulacji i treningu PPO możemy wykonywać na Edenie.

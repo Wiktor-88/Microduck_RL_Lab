@@ -1,0 +1,9 @@
+Folder scripts/ służy do przechowywania skryptów uruchamiających najważniejsze procesy projektu,
+ takie jak trenowanie i testowanie agentów RL.
+- train.py — uruchamia trening agenta PPO na podstawie wybranej konfiguracji.
+- evaluate.py — uruchamia ewaluację wytrenowanego agenta i zapisuje wyniki jego działania.
+- slurm/ — zawiera skrypty do uruchamiania zadań obliczeniowych na klastrze Eden:
+  - smoke.sbatch — wykonuje krótki test sprawdzający, czy środowisko i trening działają poprawnie.
+  - train.sbatch — uruchamia właściwy trening PPO na GPU.
+Przykład: Za pomocą train.sbatch uruchamiamy trening agenta na Edenie, 
+a po jego zakończeniu korzystamy z evaluate.py, aby sprawdzić skuteczność wytrenowanej polityki.

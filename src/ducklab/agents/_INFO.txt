@@ -1,0 +1,9 @@
+Folder src/ducklab/agents/ służy do przechowywania implementacji agentów Reinforcement Learning, 
+którzy na podstawie obserwacji środowiska podejmują decyzje o sterowaniu robotem Microduck.
+- __init__.py — oznacza katalog jako pakiet Pythona, umożliwiając importowanie jego modułów.
+- base.py — definiuje wspólny interfejs agentów, np. metodę wyboru akcji na podstawie obserwacji.
+- baseline.py — implementuje prostego agenta odniesienia, np. losowego, którego wyniki będziemy 
+    porównywać z wytrenowanym PPO.
+Przykład: Agent losowy wykonuje przypadkowe ruchy, natomiast wytrenowany agent PPO wybiera akcje za pomocą sieci neuronowej. Porównując ich wyniki, możemy ocenić skuteczność uczenia RL.
+
+Ważne: Folder agents/ odpowiada za zachowanie agentów, natomiast training/ za proces ich uczenia.

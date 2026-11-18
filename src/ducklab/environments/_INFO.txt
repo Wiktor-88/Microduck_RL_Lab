@@ -1,0 +1,15 @@
+Folder src/ducklab/environments/ służy do zarządzania środowiskiem symulacyjnym Microducka, 
+jego fizyką, funkcjami nagrody oraz warunkami, w których agent RL będzie trenowany.
+- __init__.py — oznacza katalog jako pakiet Pythona, umożliwiając importowanie jego modułów.
+- factory.py — odpowiada za tworzenie i inicjalizowanie środowisk symulacyjnych na 
+podstawie wybranej konfiguracji.
+- robot.py — zarządza konfiguracją robota, np. jego przegubami, parametrami fizycznymi 
+i modelem symulacyjnym.
+- rewards.py — definiuje funkcje nagrody, które określają, 
+za jakie zachowania agent otrzymuje nagrody lub kary.
+- randomization.py — implementuje Domain Randomization, 
+czyli losowe zmiany parametrów fizycznych, np. tarcia podłoża, masy robota lub sił zewnętrznych.
+Przykład: Możemy stworzyć środowisko z losowym tarciem podłoża i trenować w nim agenta PPO, 
+aby nauczył się stabilnego chodzenia w różnych warunkach.
+
+Ważne: Moduł będzie wykorzystywał i rozszerzał oficjalny symulator Microduck RL, zamiast implementować całą fizykę robota od zera.
