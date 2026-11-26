@@ -1,0 +1,4 @@
+# Virtual environments (uv / Python)
+.venv/
+venv/
+env/

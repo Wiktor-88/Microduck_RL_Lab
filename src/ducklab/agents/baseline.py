@@ -1,4 +1,4 @@
-from base import BaseAgent
+from ducklab.agents.base import BaseAgent
 import torch
 
 
