@@ -88,6 +88,3 @@ Microduck-RL/
 
 
 The requiremenst for this project are specified in **requirements.txt**
-
-Formalny opis zadania lokomocji, źródła i status weryfikacji:
-[Specyfikacja MDP/POMDP](docs/MDP_SPEC.md).
