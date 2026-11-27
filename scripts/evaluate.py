@@ -42,7 +42,11 @@ def main():
 
     summary = summarize_episodes(returns_list, lengths_list, distances_list)
 
-    
+    Path("results").mkdir(exist_ok=True)
+    Path("results/evidence").mkdir(exist_ok=True)
+    with open("results/evidence/baseline_metrics.json", "a") as f:
+        json.dump(summary, f, indent=2)
+
     print("Evaluation complete! Summary:")
     print(json.dumps(summary, indent=2))
 

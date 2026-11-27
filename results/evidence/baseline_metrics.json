@@ -1,0 +1,9 @@
+{
+  "num_episodes": 500,
+  "mean_return": -5.949517098903656,
+  "std_return": 11.104278144677112,
+  "mean_survival_steps": 37.542,
+  "std_survival_steps": 15.189082789951472,
+  "mean_distance_m": 0.0037713122103596106,
+  "max_distance_m": 0.3594214618206024
+}
