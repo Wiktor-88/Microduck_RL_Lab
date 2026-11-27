@@ -4,10 +4,10 @@
  
 **How does domain randomization affect the robustness and generalization of PPO-based locomotion policies under unseen physical disturbances?**
 
-We would check if the robots can handle differnet envoirnoments such as different labyrinyhs with many obstacles.
+We would like to check if the robots can handle different environments such as different labirynths with many obstacles.
 
-The project is devided into 6 main branches:
-- Envirnoment 
+The project is divided into 6 main branches:
+- Environment 
 - RL learning
 - Evaluation
 - Infrastructure
@@ -15,7 +15,7 @@ The project is devided into 6 main branches:
 - Report and Presentation
 
 
-Below is shown full tree-files for this project:
+The full tree-files for this project are shown below:
 ```text
 Microduck-RL/
 │
