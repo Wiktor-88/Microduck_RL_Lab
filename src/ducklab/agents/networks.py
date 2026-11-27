@@ -1,6 +1,6 @@
 from typing import Any
 
-from base import BaseAgent
+from ducklab.agents.base import BaseAgent
 import torch
 from torch import nn
 
