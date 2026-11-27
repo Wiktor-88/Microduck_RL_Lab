@@ -119,13 +119,35 @@ So we have the reward got in one step $R_{t+1}$ and its expected value $\bar{r}(
 
 Begining of the trajectory is described with:
 $$S_0 \sim p_0$$
+A reset does not always mean an identical configuration. It can sample both the initial state and the environment parameters.
+
+The actual end of a task can be represented by an absorbing state $s$:
+$$
+\mathbb{P}(S_{t+1} = s \mid S_t = s) = 1, \quad R_{t+1} = 0
+$$
+No further rewards belonging to the same trajectory occur. The reset initiates a new one.
+
+For the termination time step $T$, the return is given by:
+$$
+G_t = \sum_{k=t+1}^{T} \gamma^{k-t-1} R_k
+$$
+
+If the task can run indefinitely, we standardly assume $0 \le \gamma < 1$, along with conditions ensuring the existence of the expected return.
+
+**The limit of the simulated episode length does not have to be a true task terminal.** When it is merely a technical cutoff, further movement would still hold value. Therefore, we will treat termination and truncation separately.
+
+
+The difference between MDP 
+
+
+
 
 
 # 2. Function approximation and neural netowrks
 ## Function approximation in Mircoduck problem
 FIrst we remind the value of the state is detrmined by:
 $$v^{\pi}(s) = \mathbb{E}_{\pi}[G_t | S_t = s]$$
-where $G_t = \sum_{i=0}^{\infty} \gamma^i R_{t+1 + i}$ and $s \in \mathcal{S}$
+
 
 Function $v^{\pi}$ answers the question **what expected return we will recive if we start in state $\mathbf{s}$ and then working with policy $\mathbf{\pi}$** 
 
@@ -149,8 +171,6 @@ The process of learning is finding specific parameters insinde this family. Of c
 
 # Policy Gradnient and Actor-Critic
 
-# Math behind PPO
-
-# Practical PPO
+# PPO
 
 # Domain Randomization and evaluation
