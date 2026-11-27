@@ -24,5 +24,5 @@ class PrimitiveNet(nn.Module):
         self.net = nn.Sequential(*layers)
 
 
-        def Forward(self, state: torch.Tensor) -> torch.Tensor:
-            return self.net(state)
+    def forward(self, state: torch.Tensor) -> torch.Tensor:
+        return self.net(state)
