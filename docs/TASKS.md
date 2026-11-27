@@ -14,7 +14,7 @@ This document tracks completed work, required improvements and planned tasks
 ### Environment
 - [x] Implement a simplified Microduck model in MuJoCo (`environments/factory.py`)
 - [x] Define basic observations and a 14-dimensional action interface
-- [x] Implement an initial reward function (`environments/rewards.py`.
+- [x] Implement an initial reward function (`environments/rewards.py`)
 - [x] Implement environment reset and episode termination logic
 
 ### Agents and Evaluation
