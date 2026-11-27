@@ -5,9 +5,7 @@
 In this project **agent** is trying to learn how to control Microduck to make the robot listen to command how to move with stability.
 
 We can assume that the movement of the robot is combined of:
-$$c_t^{vel} = 
-c_t^{\mathrm{vel}}
-=
+$$c_t^{vel} =
 \begin{bmatrix}
 v_{x,t}^{*}\\
 v_{y,t}^{*}\\
