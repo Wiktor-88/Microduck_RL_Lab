@@ -44,7 +44,7 @@ def main():
 
     Path("results").mkdir(exist_ok=True)
     Path("results/evidence").mkdir(exist_ok=True)
-    with open("results/evidence/baseline_metrics.json", "a") as f:
+    with open("results/evidence/baseline_metrics.json", "w") as f:
         json.dump(summary, f, indent=2)
 
     print("Evaluation complete! Summary:")
