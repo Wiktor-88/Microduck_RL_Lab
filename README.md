@@ -89,4 +89,4 @@ Microduck-RL/
 ```
 
 
-The requiremenst for this project are specified in **requirements.txt**
+The requiremenst for this project are specified in `pyproject.toml`.
