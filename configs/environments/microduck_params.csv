@@ -1,0 +1,19 @@
+Group (Link),Joint Name,Min Limit (rad),Max Limit (rad)
+Left Leg,left_hip_yaw,-0.43633231299858238,0.52359877559829882
+Left Leg,left_hip_roll,-0.38397243543869919,0.38397243543880583
+Left Leg,left_hip_pitch,-1.570796326794949,1.5707963267948439
+Left Leg,left_knee,-1.5707963267948979,1.570796326794895
+Left Leg,left_ankle,-1.5707963267949061,1.570796326794887
+Head / Neck,neck_pitch,-1.570796326794897,1.047197551196597
+Head / Neck,head_pitch,-1.570796326794897,1.570796326794897
+Head / Neck,head_yaw,-2.9670597283903608,2.967059728390359
+Head / Neck,head_roll,-0.43633231299858333,0.4363323129985815
+Right Leg,right_hip_yaw,-0.523598775598297,0.43633231299858422
+Right Leg,right_hip_roll,-0.3839724354387507,0.38397243543875431
+Right Leg,right_hip_pitch,-1.57079632679494,1.570796326794853
+Right Leg,right_knee,-1.5707963267949341,1.570796326794859
+Right Leg,right_ankle,-1.570796326794903,1.57079632679489
+Parameter,Value,Unit,Engineering Notes
+Total Model Mass,0.737243,kg,Sum of all provided <geom> and <inertial> tags
+Active Joints Count,14,pcs,Servo hinges (chosen_actuator)
+Recommended Domain Randomization (Mass),+/- 10-20%,-,To be implemented in Isaac Lab (Omniverse)
