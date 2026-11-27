@@ -77,7 +77,9 @@ Microduck-RL/
 │   └── test_metrics.py
 │
 ├── docs/
-│   ├── architecture.md
+│   ├── ARCHITECTURE.md
+│   ├── Mathemathical_description.md
+│   ├── TASKS.md
 │   └── experiments.md
 │
 ├── reports/
